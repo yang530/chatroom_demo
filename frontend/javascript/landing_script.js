@@ -1,5 +1,5 @@
 //this script controls the frontend landing section
-let socket = io("http://localhost:3000/");
+let socket = io();
 let username = "";
 
 const input1 = document.getElementById("input1");
