@@ -1,0 +1,28 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+#landing{
+    display: none;
+}
+
+#landing.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#landing h1{
+    text-align: center;
+    width: 100%;
+}
+
+#landing p{
+    text-align: center;
+    width: 100%;
+}

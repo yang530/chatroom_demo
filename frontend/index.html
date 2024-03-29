@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chatroom landing</title>
+<link rel="stylesheet" href="css/landing_style.css">
+<link rel="stylesheet" href="css/chat_style.css">
+</head>
+
+    <body>
+        <section id="landing" class="active">
+            <h1 id="title">Chat Room Demo</h1>
+            <form id="form1" class="active" action="">
+                <label for="input1">username:</label>
+                <input id="input1" autocomplete="off" />
+                <button>Join Chat</button>
+            </form>
+            <p id="info1"></p>
+        </section>
+        <section id="chat">
+            <ul id="status_bar">
+                <li id="uName"></li>
+                <li id="uId"></li>
+                <li id="uNum"></li>
+            </ul>
+            <ul id="messages"></ul>
+            <form id="form2" action="">
+                <input id="uTarget" placeholder="say to whom" autocomplete="off" />
+                <input id="input2" placeholder="say something..." autocomplete="off" /><button>Send</button>
+            </form>
+        </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="javascript/landing_script.js"></script>
+    <script src="javascript/chat_script.js"></script>
+    </body>
+
+</html>
